@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Huuro💡</title>
+    <title>Huuro⚡</title>
 </head>
 
 <body>
+    
+    <nav>
+        <h1>Huuro</h1>
+    </nav>
 
     <div class="container">
         <div class="container-content">
             <div class="content-info">
 
-                <h1>Huuro💡</h1>
+                <h1>Huuro⚡</h1>
 
                 <h3>
                     Descubra quanto virá na conta de luz, inserindo o valor dos Kwh gastos até o momento
@@ -34,4 +38,18 @@
 </body>
 
 <script src="assets/js/calcular-luz.js"></script>
+<script>
+
+    var btn_Calcular = document.getElementById('btn-calc-1')
+    var txt_Valor = document.getElementById('valor')
+
+    btn_Calcular.addEventListener('click', function () {
+
+        window.location.href = 'dashboard.html?'+ txt_Valor.value + '='
+        load()
+
+    })
+
+</script>
+
 </html>

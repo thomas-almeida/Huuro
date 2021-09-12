@@ -1,7 +1,7 @@
 .input-area{
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-content: center;
 }
 
@@ -24,6 +24,34 @@
     font-size: 18pt;
 }
 
+.input-area-dash{
+    padding: 20px;
+    padding-left: 0;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
+
+#valor-dash{
+    border: 1px solid mediumpurple;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 22pt;
+    font-family: monospace;
+    color: mediumpurple;
+    outline: none;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+#valor-dash::placeholder{
+    color: mediumpurple;
+    padding: 5px;
+    font-size: 18pt;
+}
+
+
 button{
     background-color: mediumpurple;
     color: white;
@@ -41,5 +69,10 @@ button:hover{
 }
 
 #valor:hover{
+    box-shadow: 2px 2px 4px rgba(147, 112, 216, 0.781);
+}
+
+
+#valor-dash:hover{
     box-shadow: 2px 2px 4px rgba(147, 112, 216, 0.781);
 }

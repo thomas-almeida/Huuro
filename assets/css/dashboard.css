@@ -1,0 +1,63 @@
+.content{
+    position: relative;
+    top: 80px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dash-info{
+    text-align: left;
+    width: 650px;
+    margin: 10px;
+    padding: 25px;
+}
+
+.dash-details ul, .dash-info ul{
+    list-style: none;
+}
+
+.dash-details li{
+    font-family: monospace;
+}
+
+.dash-details li{
+    font-size: 16pt;
+}
+.dash-details h2{
+    font-size: 30pt;
+    margin-top: 20px;
+}
+
+.dash-info h3{
+    width: 60%;
+}
+
+.dash-details{
+    border: 1px solid mediumpurple;
+    box-shadow: 2px 2px 4px mediumpurple;
+    border-radius: 4px;
+    width: 350px;
+    height: 600px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.dash-details li{
+    margin: 12px;
+}
+
+.content b{
+    color: mediumpurple;
+}
+
+#btn-calc-2{
+    width: auto;
+}
+
+#total-dash, #total-info{
+    color: mediumpurple;
+    margin: 10px;
+    margin-left: 0;
+}
