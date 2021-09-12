@@ -1,4 +1,4 @@
-# Huuro⚡
+# Huuro💡
 <h2>O repositório nerd que consulta o valor da sua energia</h2>
 
 <h3>✔ O que é o Huuro?</h3>
