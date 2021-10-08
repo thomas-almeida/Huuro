@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Huuro⚡</title>
+    <title>Huuro - Calcular conta de luz</title>
 </head>
 
 <body>
     
     <nav>
-        <h1>Huuro</h1>
+        <b>Huuro - Beta</b>
     </nav>
 
     <div class="container">
         <div class="container-content">
             <div class="content-info">
 
-                <h1>Huuro⚡</h1>
+                <h1>Huuro</h1>
 
                 <h3>
                     Descubra quanto virá na conta de luz, inserindo o valor dos Kwh gastos até o momento
@@ -29,6 +29,11 @@
                 <div class="input-area">
                     <input type="text" name="" id="valor" placeholder="Meu consumo é...">
                     <button id="btn-calc-1">Descobrir</button>
+                </div>
+
+                <div class="flag-status">
+                    <p>Status da bandeira atual, <b id="info-red-flag">Vermelha</b></p>
+                    <p>Região - <b>São Paulo - SP</b></p>
                 </div>
 
             </div>
@@ -47,6 +52,8 @@
 
         window.location.href = 'dashboard.html?'+ txt_Valor.value + '='
         load()
+
+        txt_Valor.value = ''
 
     })
 

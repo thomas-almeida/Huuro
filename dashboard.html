@@ -8,26 +8,20 @@
 
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Huuro⚡</title>
+    <title>Huuro - Calcula conta de luz</title>
 </head>
 
 <body onload="load()">
 
     <nav>
-        <h1>Huuro</h1>
+        <b>Huuro - Beta</b>
     </nav>
 
     <div class="container">
         <div class="content">
-
             <div class="dash-info">
 
-                <h1>Huuro⚡</h1>
-                <div class="input-area-dash">
-                    <input type="text" name="" id="valor-dash" placeholder="Meu consumo é...">
-                    <button id="btn-calc-2">Calcular novamente</button>
-                </div>
-
+                <h1>Huuro</h1>
                 <h3>
                     Com <b id="resultado">000 Kwh</b>, o valor da sua conta de luz está atualmente em
                 </h3>
@@ -43,6 +37,11 @@
                 </ul>
 
                 <p>TARIFAS COM ICMS (25%) *</p>
+
+                <div class="input-area-dash">
+                    <input type="text" name="" id="valor-dash" placeholder="Meu consumo é...">
+                    <button id="btn-dash">Calcular novamente</button>
+                </div>
 
             </div>
 
@@ -73,6 +72,15 @@
 
 </body>
 
-    <script src="assets/js/calcular-luz.js"></script>
+<script src="assets/js/calcular-luz.js"></script>
+<script>
+    'use strict'
+
+    var btnCalcDash = document.getElementById('btn-dash')
+    btnCalcDash.addEventListener('click', function () {
+        loadAgain()
+    })
+
+</script>
 
 </html>
