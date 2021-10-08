@@ -1,5 +1,8 @@
 'use strict'
 
+//Input da Dashboard "Calcular Novamente"
+var inputDash = document.getElementById('valor-dash')
+
 //Valores do KWH atuais
 var tusd = 0.40949
 var te = 0.38318
@@ -75,5 +78,43 @@ function load() {
     var total_Calculado = tusd_Calculado + te_Calculado + RedFlag2 + montante_Impostos
     total_ContaDash.innerText = 'R$ ' + total_Calculado.toFixed(2).replace('.', ',')
     total_ContaInfo.innerText = 'R$ ' + total_Calculado.toFixed(2).replace('.', ',')
+
+}
+
+
+function loadAgain(){
+
+   
+    console.log(inputDash.value)
+
+    // Transformando esse valor formatado de string para Float
+    var valorFloat = parseFloat(inputDash.value)
+
+    //Calculando TUSD e TE, mostrando Dashboard
+    var tusd_Calculado = valorFloat * tusd
+    tusd_Dash.innerText = 'R$ ' + tusd_Calculado.toFixed(2).replace('.', ',')
+    var te_Calculado = valorFloat * te
+    te_Dash.innerText = 'R$ ' + te_Calculado.toFixed(2).replace('.', ',')
+
+    //Mostrando Detalhes na Dashboard
+    redflag_Dash.innerText = 'R$ ' + RedFlag2.toFixed(2).replace('.', ',')
+    pis_pasep_Dash.innerText = 'R$ ' + pis_pasep.toFixed(2).replace('.', ',')
+    confins_Dash.innerText = 'R$ ' + cofins.toFixed(2).replace('.', ',')
+    multa_Dash.innerText = 'R$ ' + multa.toFixed(2).replace('.', ',')
+    juros_Mora_Dash.innerText = 'R$ ' + juros_Mora.toFixed(2).replace('.', ',')
+    at_monetario_Dash.innerText = 'R$ ' + at_monetario.toFixed(2).replace('.', ',')
+    cosip_sp_Dash.innerText = 'R$ ' + cosip_sp.toFixed(2).replace('.', ',')
+
+    tusd_base.innerText = tusd
+    te_base.innerText = te
+    redflag_base.innerText = RedFlag2
+    kwh_base.innerText = valorFloat + " Kwh"
+
+    // Calculando e Mostrando Total na Dashboard
+    var total_Calculado = tusd_Calculado + te_Calculado + RedFlag2 + montante_Impostos
+    total_ContaDash.innerText = 'R$ ' + total_Calculado.toFixed(2).replace('.', ',')
+    total_ContaInfo.innerText = 'R$ ' + total_Calculado.toFixed(2).replace('.', ',')
+
+    inputDash.value = ''
 
 }
