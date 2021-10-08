@@ -2,29 +2,29 @@
 @import url('input-area.css');
 @import url('dashboard.css');
 @import url('navbar.css');
+@import url('info-flags.css');
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: #1f1d28;
     color: white;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     padding: 30px;
 }
 
-.container-content{
+.container-content {
     display: flex;
     justify-content: center;
     padding: 30px;
     position: relative;
-    top: 180px;
     left: 0px;
 }
 
@@ -33,13 +33,29 @@ body{
     text-align: center;
 }
 
-.container h1{
+.container h1 {
     font-size: 4.9rem;
 }
 
-.container h3{
+.container h3 {
     font-size: 22pt;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: mediumpurple;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(138, 101, 213, 0.905); 
+  }

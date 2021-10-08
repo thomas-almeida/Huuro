@@ -16,8 +16,7 @@
 
 .content{
     position: relative;
-    top: 80px;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
