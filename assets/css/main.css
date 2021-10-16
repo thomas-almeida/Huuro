@@ -4,6 +4,7 @@
 @import url('navbar.css');
 @import url('info-flags.css');
 @import url('media-queries.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -62,40 +63,94 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(138, 101, 213, 0.905); 
-  }
+    background: rgba(138, 101, 213, 0.905);
+}
 
 
 /* Responsividade !! */
 @media screen and (max-width: 600px) {
 
-    .container-content{
+    .container-content {
         padding: 0px;
     }
 
-    .content-info{
+    .content-info {
         width: 80%;
     }
 
-    .content-info h1{
+    .content {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dash-info{
+        width: 100%;
+    }
+
+    .dash-info h1{
         font-size: 3.4rem;
     }
 
-    .content-info h3{
+    .dash-info h3{
         font-size: 1.2rem;
+        width: 100%;
     }
 
-    .input-area{
+    #total-info{
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .input-area-dash{
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #btn-calc-1{
+    #valor-dash{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #btn-dash{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .dash-details{
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .dash-details li{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #total-dash{
+        text-align: center;
+    }
+
+    .content-info h1 {
+        font-size: 3.4rem;
+    }
+
+    .content-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .input-area {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #btn-calc-1 {
         margin-left: 0;
         width: 260px;
     }
 
-    #valor{
+    #valor {
         width: 200px;
         margin: 10px;
     }
@@ -104,23 +159,23 @@ body {
 
 
 @media screen and (max-width: 992px) {
-    
 
-    .content-info{
+
+    .content-info {
         width: 80%;
     }
 
-    .input-area{
+    .input-area {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #valor{
+    #valor {
         margin-bottom: 10px;
         width: 100%;
     }
 
-    #btn-calc-1{
+    #btn-calc-1 {
         margin-left: 0;
         width: 100%;
     }
@@ -128,4 +183,4 @@ body {
 
 
 
-  }
+}
