@@ -3,6 +3,7 @@
 @import url('dashboard.css');
 @import url('navbar.css');
 @import url('info-flags.css');
+@import url('media-queries.css');
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +16,13 @@ body {
 }
 
 .container {
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     padding: 30px;
+
 }
 
 .container-content {
@@ -58,4 +63,69 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(138, 101, 213, 0.905); 
+  }
+
+
+/* Responsividade !! */
+@media screen and (max-width: 600px) {
+
+    .container-content{
+        padding: 0px;
+    }
+
+    .content-info{
+        width: 80%;
+    }
+
+    .content-info h1{
+        font-size: 3.4rem;
+    }
+
+    .content-info h3{
+        font-size: 1.2rem;
+    }
+
+    .input-area{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #btn-calc-1{
+        margin-left: 0;
+        width: 260px;
+    }
+
+    #valor{
+        width: 200px;
+        margin: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    
+
+    .content-info{
+        width: 80%;
+    }
+
+    .input-area{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #valor{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #btn-calc-1{
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+
+
   }
