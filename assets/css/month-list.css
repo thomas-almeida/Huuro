@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-
 }
 
 .month-list ul{
@@ -26,4 +25,21 @@
 
 #month-title{
     width: 200px;
+}
+
+#btn-save{
+    background-color: mediumpurple;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 15pt;
+    margin: 10px;
+    margin-left: 0;
+
+}
+
+button:hover{
+    box-shadow: 2px 2px 4px rgba(147, 112, 216, 0.781);
 }
