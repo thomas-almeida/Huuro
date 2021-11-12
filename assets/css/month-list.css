@@ -1,0 +1,29 @@
+.month-list{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.month-list ul{
+    list-style-type: none;
+    text-align: left;
+    float: left;
+}
+
+.month-list li{
+    display: inline-block;
+    margin: 20px;
+}
+
+.month{
+    padding: 20px;
+    width: 200px;
+    border: 1px solid mediumpurple;
+    border-radius: 6px;
+    box-shadow: 1px 3px 5px mediumpurple;
+}
+
+#month-title{
+    width: 200px;
+}
