@@ -49,6 +49,10 @@
     width: 60%;
 }
 
+#total-dash{
+    font-size: 3.2rem;
+}
+
 .dash-details{
     border: 1px solid mediumpurple;
     box-shadow: 2px 2px 4px mediumpurple;
