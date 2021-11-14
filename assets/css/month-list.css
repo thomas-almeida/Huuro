@@ -21,6 +21,7 @@
     border: 1px solid mediumpurple;
     border-radius: 6px;
     box-shadow: 1px 3px 5px mediumpurple;
+    text-transform: uppercase;
 }
 
 #month-title{

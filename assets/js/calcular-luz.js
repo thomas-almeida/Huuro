@@ -2,7 +2,7 @@
 
 function load() {
 
-    // Formatando o valor que vem da URL
+     // Formatando o valor que vem da URL
     var local = window.location.href
     var localFormatOne = local.substring(local.indexOf('?') + 1)
     var localFormatTwo = localFormatOne.replace('=', '')

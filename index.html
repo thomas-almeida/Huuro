@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    
+
     <nav>
         <b>Huuro - Beta</b>
     </nav>
@@ -44,19 +44,22 @@
 
 <script src="assets/js/calcular-luz.js"></script>
 <script>
-
+    
     var btn_Calcular = document.getElementById('btn-calc-1')
     var txt_Valor = document.getElementById('valor')
 
     btn_Calcular.addEventListener('click', function () {
 
-        window.location.href = 'dashboard.html?'+ txt_Valor.value + '='
-        load()
+        if (txt_Valor.value == '') {
+            alert('Insira um valor em KWH')
+        } else {
+            window.location.href = 'dashboard.html?' + txt_Valor.value + '='
+            load()
 
-        txt_Valor.value = ''
+            txt_Valor.value = ''
+        }
 
     })
-
 </script>
 
 </html>
