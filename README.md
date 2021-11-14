@@ -13,21 +13,4 @@ A base de cálculo presente no código é sob as métricas da cidade de São Pau
 </p>
 
 <hr>
-
-<h3>Modelo de UI</h3>
-
-<p>Tela inicial</p>
-![tela 1](https://user-images.githubusercontent.com/81270415/132998640-b4adb68f-9183-458e-a717-760d4078d74a.png)
-
-<hr>
-
-<p>Tela de resultados</p>
-![tela 2](https://user-images.githubusercontent.com/81270415/132998671-4bebe22f-af47-44c5-841c-21020c9b287e.png)
-
-<hr>
-
-<p>Blog</p>
-![tela 3](https://user-images.githubusercontent.com/81270415/132998701-f7528c0d-6ad0-40bc-a142-2c2991b52eb6.png)
-
-
 <b>Caso encontre maneiras de agregar ao projeto, mande seu PR! 💗</b>
