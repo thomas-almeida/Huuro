@@ -1,6 +1,8 @@
 # Huuro💡
 <h2>O repositório nerd que consulta o valor da sua energia</h2>
 
+![huuro](96shots_so.png)
+
 <h3>✔ O que é o Huuro?</h3>
 <p>
   O app <b>Huuro</b> é uma plataforma que concede ao usuário de maneira dinâmica o resultado atual em reais(BRL) da sua conta de luz, usando scripts simples com <b>JavaScript</b>.
